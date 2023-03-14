@@ -1,0 +1,20 @@
+import { Component } from "react";
+import ErorMessage from "../errorMessage/ErrorMessage";
+class ErrorBoundary extends Component {
+  state = {
+    error: false
+  };
+  componentDidCatch(error, info) {
+    console.log(error, info);
+    this.setState({ error: true });
+  }
+  render() {
+    if (this.state.error) {
+      return <ErorMessage />;
+    } else {
+      return this.props.children;
+    }
+  }
+}
+
+export default ErrorBoundary;
