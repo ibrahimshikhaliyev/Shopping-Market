@@ -1,0 +1,19 @@
+.sneaker_item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // margin-top: 40px;
+    min-height: 565px;
+    gap: 125px;
+  
+}
+
+
+
+@media (max-width:576px) {
+    .sneaker_item{
+        gap: 0;
+        flex-direction: column;
+    }
+    
+}

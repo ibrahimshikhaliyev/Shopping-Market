@@ -1,0 +1,57 @@
+@import '../../assets/variables.scss';
+
+.cart{
+  
+    width: 360px;   
+    min-height: 256px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+    border-radius: 10px;
+    
+    &_txt{
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        /* identical to box height, or 162% */
+
+        text-align: center;
+
+        color: #69707D;
+    }
+
+    &_header{
+        height: 67px;
+        width: 100%;
+        padding: 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1D2026;
+        border-bottom: 1px solid #E4E9F2;
+
+    }
+
+    &_item_list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 24px 24px 32px ;
+
+        .checkout_btn{
+            width: 312px;
+            height: 56px;
+            cursor: pointer;
+            border:none;
+            background: $main-color;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+
+    }
+}
+

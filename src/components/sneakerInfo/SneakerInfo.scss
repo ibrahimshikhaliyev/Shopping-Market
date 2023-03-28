@@ -1,0 +1,204 @@
+
+@import '../../assets/variables.scss';
+.info{
+    width: 445px;
+   height: 565px;
+    padding: 62px 0 122px 0;
+
+    
+    &_title{
+        color:$main-color;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &_sneaker_title{
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 48px;
+        color: #1D2026;
+    }
+
+    &_descr{
+        margin-top: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #69707D;
+    }
+}
+
+
+.price{
+    margin-top: 24px;
+    width:173px;
+    height: 68px;
+    position: relative;
+
+    &_current{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        color: #1D2026;
+    }
+
+    &_discount{
+        position: absolute;
+        padding: 7px 11px 0 8px;
+        top: 4px;
+        right: 0;
+        background-color: #FFEEE2;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-color;
+
+    }
+
+    &_old{
+        // margin-top: 3px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration-line: line-through;
+        color: #B6BCC8;
+    }
+}
+
+
+.adding{
+    width: 100%;
+    height: 56px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+
+    .counter{
+        width: 157px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px;
+         background: #F6F8FD;
+         border-radius: 10px;
+
+        &_operator{
+            cursor: pointer;
+            border:none;
+            background:none;
+            font-size: 25px;
+            font-weight: 700;
+            color: $main-color;
+            span{
+                outline: none;
+                &::focus{
+                     outline:none;
+                }   
+            }
+            
+            
+        }
+
+        &_number{
+            margin-top: 5px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #1D2026;
+        }
+    }
+
+    &_button{
+        border:none;
+        cursor: pointer;
+        width: 272px;
+        height: 100%;
+        background-color:$main-color;
+        border-radius: 10px;
+        padding: 17px 72px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        gap: 16px;
+        span{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width:576px) {
+   
+    .info{
+        width: 100%;
+        padding: 24px;
+        height: auto;
+        &_sneaker_title{
+            margin-top: 16px;
+            font-size: 28px;
+            line-height: 32px;
+
+        }
+
+        &_descr{
+            margin-top: 15px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+
+    .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        height: auto;
+        width: 100%;
+        margin-top: 24px;
+        
+        &_discount{
+            right: 31px;
+            position: relative;
+            margin-right: 37px;
+            top:0;
+        }
+        &_old{
+            margin-top: 0;
+            margin-right: 21px;
+        }
+    }
+
+    .adding{
+        flex-direction: column;
+        .counter{
+            width: 100%;
+        }
+
+        &_button{
+            width: 100%;
+            padding:17px 101px;
+            // outline: none;
+        }
+    }
+}
